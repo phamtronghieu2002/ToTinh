@@ -1,0 +1,21 @@
+@media(max-width:740px) {
+       
+body
+{
+    background: none !important;
+}
+
+.img-bg
+{
+    display: block;
+}
+.po-up {
+    width: 300px;
+}
+#wrapper-main
+{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+}

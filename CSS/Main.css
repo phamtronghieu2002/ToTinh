@@ -1,0 +1,235 @@
+body {
+    height: 100vh;
+    display:flex;
+
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+.active-background-body
+{
+    background: url("https://wallpapercave.com/wp/wp2819725.jpg");
+    background-size: cover;
+    
+}
+
+
+
+.dp-none
+{
+    display: none;
+}
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+/* khối chính */
+#intro {
+    width: 100%;
+    height: 100vh;
+    background: url("https://thuthuatnhanh.com/wp-content/uploads/2021/05/hinh-nen-mau-hong-4K.jpg");
+    background-size: cover;
+   
+}
+
+#intro  #loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border: 5px solid white;
+    border-radius: 50%;
+    border-right: 5px solid transparent;
+    animation: spin 1s forwards linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+/* khối chính */
+.po-up {
+    text-align: center;
+width: 400px;
+background: #423e3e;
+padding: 30px 20px;
+/* display: inline-block; */
+border-radius: 5px;
+color: white;
+z-index: 1;
+display: none;
+box-shadow: 0px 0px 3px black;
+}
+
+.po-up img {
+    max-width: 100%;
+}
+/* khối chính */
+.background-poup {
+  
+    bottom: 0;
+    right:0;
+    left:0;
+    position: fixed;
+    top: 0px;
+    background: grey;
+    opacity: 0.8;
+}
+.img-bg
+{
+    display: none;
+}
+.po-up button {
+    padding: 5px 20px;
+    color: white;
+    border: 1px solid;
+    outline: none;
+    border-radius: 3px;
+    background: rgb(0, 204, 255);
+
+}
+/* khối chính */
+#wrapper-main
+
+{
+    max-width: 700px
+}
+#main
+{
+     transition: all 0.8s;
+     overflow: hidden;
+     width: 0px;
+     height: 100vh;
+    /* background: url("https://mtrend.vn/wp-content/uploads/2015/11/hinh-nen-tinh-yeu-dep-nhat-1.jpg"); */
+    opacity: 1;
+    text-align: center;
+    font-family: 'Grechen Fuemen', cursive;
+    position: relative;
+    
+
+}
+#main h1
+{
+font-size: 70px;
+}
+#main img
+{
+    width: 74px;
+}
+#main p
+{
+font-size: 22px;
+font-weight: 400;
+}
+#main button
+{
+font-family: sans-serif;
+padding: 12px 10px;
+border: none;
+border-radius: 10px;
+color: white;
+outline: none;
+position: absolute;
+top: 50%;
+
+}
+#main .love
+{
+    background:#e05757;
+    
+    
+}
+#main .not-love
+{
+background:#18dc18;
+left: 20%;
+transition:  all 0.2s;
+}
+/* khối chính */
+.po-up2
+{
+    padding: 60px;
+width: 960px;
+position: fixed;
+background: #2d2d2d;
+top: 20%;
+left: 15%;
+text-align: center;
+border-radius: 10px;
+box-shadow: 0px 1px 5px black;
+display: none;
+box-shadow: 0px 0px 4px black;
+
+}
+.po-up2 input
+{
+    width: 100%;
+padding: 5px 12px;
+border: none;
+outline: none;
+
+}
+.po-up2 h1
+{
+    color: white;
+}
+.po-up2 button
+{
+    margin-top: 30px;
+padding: 10px;
+border: none;
+outline: none;
+border-radius: 3px;
+color: white;
+background: #ca2c48;
+box-shadow: 0px 0px 3px pink;
+}
+/* khối chính */
+.po-up3
+{
+    padding: 50px 110px;
+    position: fixed;
+    background: #2d2d2d;
+    top: 20%;
+    left: 23%;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0px 0px 4px black;
+
+}
+.po-up3 h1
+{
+    color: white;
+}
+.po-up3 p
+{color: white;
+
+}
+.po-up3 button
+{
+    margin-top: 30px;
+border: none;
+outline: none;
+border-radius: 3px;
+color: white;
+background: #ca2c48;
+box-shadow: 0px 0px 3px pink;
+}
+.po-up3 img 
+{
+    width: 30px;
+    margin: 5px;
+}
+.po-up3 .inbox a{
+ display: block;
+ text-decoration: none;
+ padding: 10px;
+ color: white;
+}

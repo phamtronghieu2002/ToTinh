@@ -1,0 +1,74 @@
+ul
+{
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+}
+
+a
+{
+   text-decoration: none;
+ 
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.mg-0px
+{
+    margin: 0px;
+}
+
+.pd-0px
+{
+    padding: 0px;
+}
+
+.dp-flex
+{
+    display: flex;
+}
+
+.float-left
+{
+    float: left;
+}
+
+.float-right
+{
+    float: right;
+}
+
+.justify-content-space-around
+{
+    justify-content: space-around;
+}
+
+.justify-content-between
+{
+    justify-content: space-between;
+}
+
+.text-uppercase
+{
+    text-transform: uppercase;
+}
+
+.position-absolute
+{
+    position:absolute;
+}
+
+.position-relative
+{
+    position: relative;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,user-scalable=yes, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/global.css" />
+    <link rel="stylesheet" href="CSS/Main.css" />
+    <link rel="stylesheet" href="Plugin/Fontawesome/css/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/responsive.css" />
+
+    <title>Yêu Cậu</title>
+  </head>
+  <style></style>
+
+  <body>
+    <div id="intro">
+      <div id="loader"></div>
+    </div>
+    <!-- end intro -->
+    <div class="background-poup dp-none"></div>
+    <div class="po-up">
+      <img
+        src="https://i.pinimg.com/736x/38/1d/a4/381da4c941426ab4a613c45fdcd3b8dc.jpg"
+        alt=""
+      />
+      <h1>Hellu Ti Si!!!</h1>
+      <p>Tui có điều này muốn nói cậu phải trả lời thật lòng nha !!</p>
+      <button class="agree">Đồng ý</button>
+    </div>
+    <!-- end first-poup -->
+    <div id="wrapper-main">
+      <div class="img-bg">
+        <img src="https://wallpapercave.com/wp/wp2819725.jpg" alt="" />
+      </div>
+      <div id="main" class="content-mobile">
+        <h1>
+          Ti-Si yêu tui có phải không
+          <img src="[removal.ai]_tmp-6145656d3e209.png" alt="" />
+        </h1>
+        <p>Ti si không trả lời hoặc thoát ra tức là cậu là vợ tui đó nha !!!</p>
+        <button class="not-love">Mơ à :3333</button>
+        <button class="love">Iu ơi là iu moa :3</button>
+      </div>
+    </div>
+    <!-- end wrappermain -->
+    <div class="po-up2">
+      <h1>Nói cho tui biết lí do tại sao cậu yêu tui đii</h1>
+      <input type="text" class="reason" />
+      <button class="send">Gửi cho tui điii</button>
+    </div>
+
+    <div class="po-up3">
+      <h1>
+        Tui biết mà<img src="[removal.ai]_tmp-61459fd5933b6.png" alt="" />love
+        you 3000 <img src="[removal.ai]_tmp-6145a1b94bf34.png" alt="" />
+      </h1>
+      <p>Còn chờ gì nữa mà không inbox cho tui đi nào</p>
+      <button class="inbox">
+        <a href="https://www.facebook.com/profile.php?id=100012660870191"
+          >Inbox Ngay</a
+        >
+      </button>
+    </div>
+  </body>
+  <audio loop>
+    <source src="BagaikanLangitHeiakimRemix-Heiakim-6262242.mp3" />
+  </audio>
+
+  <audio loop>
+    <source src="Tieng-giot-nuoc-www_tiengdong_com.mp3" />
+  </audio>
+  <script src="Jquery.js"></script>
+  <script>
+    (function ($) {
+      play = $(".agree");
+      song = new Audio();
+      song.type = "audio/mpeg";
+      song.src = "BagaikanLangitHeiakimRemix-Heiakim-6262242.mp3";
+    })(jQuery);
+
+    play.hover(function (e) {
+      e.preventDefault();
+      song.play();
+    });
+  </script>
+  <script>
+    var dem = 1;
+
+    function TaoSoNgauNhien(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+    function actived(a) {
+      var h = TaoSoNgauNhien(30, $("#main").width() - 30);
+      var y = TaoSoNgauNhien(30, $("#main").height() - 30);
+      console.log(h + ":" + y);
+      a.css("left", h);
+      a.css("top", y);
+    }
+    // end hàm ngẫu nhiên
+    function toggle(a = "", b) {
+      if (a != "") {
+        a.fadeToggle();
+      }
+
+      b.toggleClass("dp-none");
+    }
+
+    // end ham toggle
+    var reason = [100];
+    reason[0] = "t";
+    reason[1] = "ạ";
+    reason[2] = "i";
+    reason[3] = " ";
+    reason[4] = "v";
+    reason[5] = "ì";
+    reason[6] = " ";
+    reason[7] = "b";
+    reason[8] = "ạ";
+    reason[9] = "n";
+    reason[10] = " ";
+    reason[11] = "đ";
+    reason[12] = "ẹ";
+    reason[13] = "p";
+    reason[14] = " ";
+    reason[15] = "t";
+    reason[16] = "r";
+    reason[17] = "a";
+    reason[18] = "i";
+    reason[19] = " ";
+    reason[20] = "q";
+    reason[21] = "u";
+    reason[22] = "á";
+    reason[23] = " ";
+    reason[24] = "m";
+    reason[25] = "à";
+    reason[26] = " ";
+    reason[27] = "h";
+    reason[28] = "i";
+    reason[29] = "i";
+    reason[30] = " ";
+    reason[31] = ":";
+    reason[32] = "3";
+    reason[33] = "3";
+    reason[34] = "3";
+    reason[35] = "3";
+    reason[36] = "3";
+    reason[37] = "3";
+    // xử lí jq
+    $(function () {
+      $(".not-love").hover(function () {
+        actived($(this));
+      });
+      // end hover
+
+      $(".reason").keypress(function () {
+        var empty = "";
+        for (var i = 0; i < dem; i++) {
+          empty = empty + reason[i];
+        }
+        dem++;
+        if (dem > 38) {
+          dem = 0;
+        }
+        $(this).val(empty);
+      });
+      // //
+
+      //start xử lí hiệu ứng//
+      function displayintro() {
+        $("#intro").hide();
+      }
+      setTimeout(() => {
+        displayintro();
+        $("#wrapper-main").css("display", "block");
+        toggle($(".po-up"), $(".background-poup"));
+      }, 7000);
+
+      $(".agree").click(function () {
+        toggle("", $(".background-poup"));
+        $(".po-up").hide();
+        $("#main").css("width", "100%");
+
+        $("body").toggleClass("active-background-body");
+      });
+
+      $(".love").click(function () {
+        toggle($(".po-up2"), $(".background-poup"));
+        $(".not-love").addClass("dp-none");
+      });
+
+      $(".send").click(function () {
+        toggle($(".po-up2"), $(".background-poup"));
+        toggle($(".po-up3"), $(".background-poup"));
+      });
+
+      //  end script
+    });
+  </script>
+</html>
